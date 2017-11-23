@@ -1,4 +1,4 @@
-# EE2450 Embedded Systems Programming I
+# Embedded Systems Programming I
 Introduction to C programming language
 
 # Topics
