@@ -1,2 +1,2 @@
 # EE2450
-Embedded C Programming
+C Programming
