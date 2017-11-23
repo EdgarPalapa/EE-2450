@@ -1,8 +1,8 @@
-/*
-* Written by Edgar Palapa
-* EE2450
-* Dr. Yi Zhao
-* 31 October 2017
+/*EE2450
+*Programming Assignment 4
+*Problem 1: Program to determine the percentage of A, B, C, No Credit scores
+*	    assigned in a class.
+*Written by Edgar Palapa
 */
 #include <stdio.h>
 #define MAX_CLASS_SIZE 100
