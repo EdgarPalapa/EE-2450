@@ -1,8 +1,7 @@
-/*
-* Written by Edgar Palapa
-* EE2450
-* Dr. Yi Zhao
-* 01 November 2017
+/*EE2450
+*Programming Assignment 4
+*Problem 2: Program to assist travelers in completing their travel expense claim.
+*Written by Edgar Palapa
 */
 #include <stdio.h>
 int main() {
@@ -12,7 +11,6 @@ int main() {
 	double totalDays[30];
 	int i, j, numDays;
 	int selection = 0;
-	
 	double totalExpense = 0;
 	double totalCategory[6];
 
