@@ -2,11 +2,4 @@
 Introduction to C programming language
 
 # Topics
--Variables and Assingment
--Branches
--Loops
--Arrays
--Functions
--Structs
--Pointers
--I/O
+Variables, Assingment, Branches, Loops, Arrays, Functions, Structs, Pointers, I/O
