@@ -1,3 +1,9 @@
+/*
+* Sample code that detects a 4-bit sequence 1111.
+* Now the goal is to detect an 8-bit sequence 01111110
+* and eliminate (or minimize) the use of branches via 
+* array of pointers or linked lists.
+*/
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
