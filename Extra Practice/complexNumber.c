@@ -1,6 +1,7 @@
 /*
 *Written by Edgar Palapa
 */
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -16,7 +17,7 @@ ComplexNum multComplex(ComplexNum *x, ComplexNum *y);
 ComplexNum divComplex(ComplexNum *w, ComplexNum *z);
 void conjComplex(ComplexNum *p, ComplexNum *q);
 
-int main() {
+int main(int argc, char* argv[]) {
 
 	int choice = 0;
 
