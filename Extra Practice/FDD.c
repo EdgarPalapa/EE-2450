@@ -6,7 +6,6 @@
 *	Professor: Dr. Zhao
 */
 #define _CRT_SECURE_NO_WARNINGS
-#define MAX_STATES 10
 #include <stdio.h>
 #include <stdlib.h>
 
