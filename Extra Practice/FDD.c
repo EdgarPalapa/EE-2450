@@ -69,7 +69,7 @@ FDD_State* processInput(FDD_State* currState, FDD_INPUT input);
 int main(int argc, char* argsv[]) {
 	FDD_State* currState = NULL;
 	FDD_State* nextState = NULL;
-	FDD_INPUT input = STOP;				//STOP
+	FDD_INPUT input = STOP;
 
 	// set initial 
 	currState = psM0;
