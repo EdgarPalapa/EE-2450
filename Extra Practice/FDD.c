@@ -1,7 +1,7 @@
 /*
 *	Authors:   Edgar Palapa and Blair Vidana
 *	Project:   Frame Delimiter Detector
-*   Course:    EE2450
+*   	Course:    EE2450
 *	Date:      29 November 2017
 *	Professor: Dr. Zhao
 */
@@ -11,29 +11,29 @@
 #include <stdlib.h>
 
 typedef enum FDD_STATE {					 // enum #
-	M0,		// No bits matched						 1
-	M1,		// 1 bit  matched						 2
-	M2,		// 2 bits matched						 3
-	M3,		// 3 bits matched						 4
-	M4,		// 4 bits matched						 5
-	M5,		// 5 bits matched						 6
-	M6,		// 6 bits matched						 7
-	M7,		// 7 bits matched						 8
-	M8,		// 8 bits matched						 9
+	M0,		// No bits matched				 1
+	M1,		// 1 bit  matched				 2
+	M2,		// 2 bits matched				 3
+	M3,		// 3 bits matched				 4
+	M4,		// 4 bits matched				 5
+	M5,		// 5 bits matched				 6
+	M6,		// 6 bits matched				 7
+	M7,		// 7 bits matched				 8
+	M8,		// 8 bits matched				 9
 	STATE_COUNT,	// number of states				10
 } FDD_STATE;
 
 typedef enum FDD_INPUT
-{											 // enum #
-	STOP = -2,		// stop						-2
+{								 // enum #
+	STOP = -2,		// stop					-2
 	INVALID = -1,		// invalid input			-1
-	BIT_0 = 0,		// bit 0					 0
-	BIT_1 = 1,		// bit 1					 1
-	COUNT = 2,		// # of valid inputs		 2
+	BIT_0 = 0,		// bit 0				 0
+	BIT_1 = 1,		// bit 1				 1
+	COUNT = 2,		// # of valid inputs			 2
 } FDD_INPUT;
 
 typedef const struct FDD_State_Struct {
-	FDD_STATE	  State;		// description of struct member
+	FDD_STATE	  State;			// description of struct member
 	int			  Match;		// description of struct member
 	const struct FDD_State_Struct* Next[COUNT];
 } FDD_State;
@@ -72,8 +72,8 @@ int main(int argc, char* argsv[]) {
 	FDD_State* nextState = NULL;
 	FDD_INPUT input = STOP;				//STOP
 
-										// set initial 
-	currState State = M0;
+	// set initial 
+	currState State = psM0;
 
 	// main loop 
 	while (1) {
