@@ -72,7 +72,7 @@ int main(int argc, char* argsv[]) {
 	FDD_INPUT input = STOP;				//STOP
 
 	// set initial 
-	currState State = psM0;
+	currState = psM0;
 
 	// main loop 
 	while (1) {
