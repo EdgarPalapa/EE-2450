@@ -32,9 +32,9 @@ typedef enum FDD_INPUT
 } FDD_INPUT;
 
 typedef const struct FDD_State_Struct {
-	FDD_STATE	  State;			// description of struct member
-	int			  Match;		// description of struct member
-	const struct FDD_State_Struct* Next[COUNT];
+	FDD_STATE	  State;			// matched State
+	int		  Match;			// number states matched
+	const struct FDD_State_Struct* Next[COUNT];	// array of pointers to the next state
 } FDD_State;
 
 // present state list
@@ -95,6 +95,7 @@ int main(int argc, char* argsv[]) {
 	return 0;
 }
 
+// read user input
 FDD_INPUT readInput() {
 	FDD_INPUT input = INVALID;
 	char str[80];
@@ -117,10 +118,10 @@ FDD_INPUT readInput() {
 	return input;
 }
 
-// FIX ME PLZ
+// process transition state based on user input
 FDD_State* processInput(FDD_State* currState, FDD_INPUT input) {
 	FDD_State* nextState = currState;
-
+	nextState = currState->Next[COUNT];
 
 	return nextState;
 }
